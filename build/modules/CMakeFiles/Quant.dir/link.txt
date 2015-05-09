@@ -1,0 +1,2 @@
+/usr/bin/ar cr libQuant.a  CMakeFiles/Quant.dir/Quant.cpp.o
+/usr/bin/ranlib libQuant.a

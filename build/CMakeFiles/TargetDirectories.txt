@@ -1,0 +1,2 @@
+/home/dev/openclTest/build/CMakeFiles/CLNeuralNetwork.dir
+/home/dev/openclTest/build/modules/CMakeFiles/Quant.dir

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/openclTest/modules/DeviceStats.hpp
+
+/home/dev/openclTest/modules/Quant.cpp
+CL/cl.h
+-
+CL/cl.hpp
+-
+memory
+-
+vector
+-
+iostream
+-
+Quant.hpp
+/home/dev/openclTest/modules/Quant.hpp
+DeviceStats.hpp
+/home/dev/openclTest/modules/DeviceStats.hpp
+
+/home/dev/openclTest/modules/Quant.hpp
+CL/cl.h
+-
+CL/cl.hpp
+-
+memory
+-
+vector
+-
+iostream
+-
+DeviceStats.hpp
+/home/dev/openclTest/modules/DeviceStats.hpp
+
