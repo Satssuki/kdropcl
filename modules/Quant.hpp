@@ -29,8 +29,9 @@
       static std::vector <std::shared_ptr<DeviceStats>> devices_stats;
       static cl::Platform platform;
       static cl::Context context;
+      static std::vector <cl::CommandQueue> queues;
+      static void buildQueues();
       static void checkErr(cl_int , const char *);
-      virtual void init() {};
     public:
       static void initialize();
   };

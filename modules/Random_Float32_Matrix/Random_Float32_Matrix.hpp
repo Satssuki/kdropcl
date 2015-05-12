@@ -7,10 +7,6 @@
 		private:
 			// Private properties
 			cl::Kernel kernel;
-			std::vector <cl::CommandQueue> queues;
-			// Private methods
-			void buildKernel();
-			void buildCommandQueues();
 		public:
 			Random_Float32_Matrix();
 	};

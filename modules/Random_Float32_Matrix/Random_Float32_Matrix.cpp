@@ -16,7 +16,7 @@
     std::cout << "-----------------------------" << std::endl;
   }
 
-  void Random_Float32_Matrix::buildKernel () {
+  Random_Float32_Matrix::Random_Float32_Matrix () {
     cl_int err;
 
     // Header for opencl compiler
@@ -67,21 +67,6 @@
     kernel = cl::Kernel(program, "rnd_float32_matrix", &err);
     checkErr(err, "Building kernel");
 
-    std::cout << "Kernel Wrapper Built Successful!" << std::endl;
-  }
-
-  void Random_Float32_Matrix::buildCommandQueues () {
-    cl_int err;
-    int size = devices.size();
-    queues = std::vector <cl::CommandQueue> ();
-    for (int i = 0; i < size; i ++) {
-      queues.push_back(cl::CommandQueue(context, devices[0], 0, &err));
-      checkErr(err, "Building Queue");
-    }
-  }
-
-  Random_Float32_Matrix::Random_Float32_Matrix () {
-    buildKernel();
-    buildCommandQueues();
+    std::cout << "Random Float 32 Matrix Kernel Wrapper Built Successfully!" << std::endl;
   }
 #endif

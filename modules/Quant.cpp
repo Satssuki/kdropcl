@@ -22,6 +22,7 @@
   #include "Quant.hpp"
   #include "DeviceStats.hpp"
 
+  std::vector <cl::CommandQueue> Quant::queues;
   std::vector <cl::Device> Quant::devices;
   std::vector <std::shared_ptr<DeviceStats>> Quant::devices_stats;
   cl::Context Quant::context;
@@ -71,6 +72,20 @@
     return code;
   }
 
+  void Quant::buildQueues() {
+    // Error tracker
+    cl_int err;
+
+    // Get number of devices
+    int size = devices.size();
+
+    // Iterate through each device and build a queue
+    for (int i = 0; i < size; i ++) {
+      queues.push_back(cl::CommandQueue(context, devices[0], 0, &err));
+      checkErr(err, "Building Queue");
+    }
+  }
+
   void Quant::initialize() {
     cl_int err;
     
@@ -94,5 +109,8 @@
     );
 
     checkErr(err, "Quant::initialize -> cl::Context()");
+
+    // Build out command queues
+    buildQueues();
   }
 #endif
