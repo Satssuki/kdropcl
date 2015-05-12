@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+../modules/Quant.hpp
+CL/cl.h
+-
+CL/cl.hpp
+-
+memory
+-
+vector
+-
+iostream
+-
+QuantEnums.hpp
+../modules/QuantEnums.hpp
+DeviceStats.hpp
+../modules/DeviceStats.hpp
+
+../types/QuantEnums.hpp
+
 /home/dev/openclTest/modules/DeviceStats.hpp
 
 /home/dev/openclTest/modules/Quant.hpp
@@ -19,10 +37,18 @@ vector
 -
 iostream
 -
+QuantEnums.hpp
+/home/dev/openclTest/modules/QuantEnums.hpp
 DeviceStats.hpp
 /home/dev/openclTest/modules/DeviceStats.hpp
+
+/home/dev/openclTest/modules/Random_Float32_Matrix/Random_Float32_Matrix.hpp
+Quant.hpp
+/home/dev/openclTest/modules/Random_Float32_Matrix/Quant.hpp
 
 /home/dev/openclTest/quant.cpp
 modules/Quant.hpp
 /home/dev/openclTest/modules/Quant.hpp
+modules/Random_Float32_Matrix/Random_Float32_Matrix.hpp
+/home/dev/openclTest/modules/Random_Float32_Matrix/Random_Float32_Matrix.hpp
 

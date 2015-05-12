@@ -136,6 +136,30 @@ Quant.cpp.s:
 	cd /home/dev/openclTest/build && $(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/Quant.cpp.s
 .PHONY : Quant.cpp.s
 
+Random_Float32_Matrix/Random_Float32_Matrix.o: Random_Float32_Matrix/Random_Float32_Matrix.cpp.o
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.o
+
+# target to build an object file
+Random_Float32_Matrix/Random_Float32_Matrix.cpp.o:
+	cd /home/dev/openclTest/build && $(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/Random_Float32_Matrix/Random_Float32_Matrix.cpp.o
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.cpp.o
+
+Random_Float32_Matrix/Random_Float32_Matrix.i: Random_Float32_Matrix/Random_Float32_Matrix.cpp.i
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.i
+
+# target to preprocess a source file
+Random_Float32_Matrix/Random_Float32_Matrix.cpp.i:
+	cd /home/dev/openclTest/build && $(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/Random_Float32_Matrix/Random_Float32_Matrix.cpp.i
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.cpp.i
+
+Random_Float32_Matrix/Random_Float32_Matrix.s: Random_Float32_Matrix/Random_Float32_Matrix.cpp.s
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.s
+
+# target to generate assembly for a file
+Random_Float32_Matrix/Random_Float32_Matrix.cpp.s:
+	cd /home/dev/openclTest/build && $(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/Random_Float32_Matrix/Random_Float32_Matrix.cpp.s
+.PHONY : Random_Float32_Matrix/Random_Float32_Matrix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -148,6 +172,9 @@ help:
 	@echo "... Quant.o"
 	@echo "... Quant.i"
 	@echo "... Quant.s"
+	@echo "... Random_Float32_Matrix/Random_Float32_Matrix.o"
+	@echo "... Random_Float32_Matrix/Random_Float32_Matrix.i"
+	@echo "... Random_Float32_Matrix/Random_Float32_Matrix.s"
 .PHONY : help
 
 

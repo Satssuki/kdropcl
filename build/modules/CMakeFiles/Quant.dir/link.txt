@@ -1,2 +1,2 @@
-/usr/bin/ar cr libQuant.a  CMakeFiles/Quant.dir/Quant.cpp.o
+/usr/bin/ar cr libQuant.a  CMakeFiles/Quant.dir/Quant.cpp.o CMakeFiles/Quant.dir/Random_Float32_Matrix/Random_Float32_Matrix.cpp.o
 /usr/bin/ranlib libQuant.a

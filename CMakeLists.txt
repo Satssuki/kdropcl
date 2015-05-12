@@ -21,10 +21,15 @@ configure_file (
 # add the binary tree to the search path for include files
 # so that we will find CLNeuralNetwork
 include_directories("${PROJECT_SOURCE_DIR}/modules")
+include_directories("${PROJECT_SOURCE_DIR}/types")
 
 # add our subdirectories
 add_subdirectory("${PROJECT_SOURCE_DIR}/modules") 
 
 add_executable(CLNeuralNetwork quant.cpp)
 
-target_link_libraries(CLNeuralNetwork OpenCL Quant)
+target_link_libraries(
+  CLNeuralNetwork
+  OpenCL
+  Quant
+)

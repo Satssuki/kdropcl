@@ -18,15 +18,19 @@
   #include <memory>
   #include <vector>
   #include <iostream>
+  #include "QuantEnums.hpp"
   #include "DeviceStats.hpp"
 
   class Quant {
     private:
-      static cl::Platform getPlatform();
+      static QERRORS getPlatform();
     protected:
       static std::vector<cl::Device> devices;
       static std::vector <std::shared_ptr<DeviceStats>> devices_stats;
+      static cl::Platform platform;
       static cl::Context context;
+      static void checkErr(cl_int , const char *);
+      virtual void init() {};
     public:
       static void initialize();
   };

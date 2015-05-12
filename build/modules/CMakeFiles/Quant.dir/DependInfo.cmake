@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/dev/openclTest/modules/Quant.cpp" "/home/dev/openclTest/build/modules/CMakeFiles/Quant.dir/Quant.cpp.o"
+  "/home/dev/openclTest/modules/Random_Float32_Matrix/Random_Float32_Matrix.cpp" "/home/dev/openclTest/build/modules/CMakeFiles/Quant.dir/Random_Float32_Matrix/Random_Float32_Matrix.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,6 +16,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../modules"
+  "../types"
+  "../modules/Random_Float32_Matrix"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -69,7 +69,7 @@ all: CMakeFiles/CLNeuralNetwork.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CLNeuralNetwork.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CLNeuralNetwork.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 0
 .PHONY : CMakeFiles/CLNeuralNetwork.dir/rule
@@ -109,7 +109,7 @@ modules/preinstall:
 modules/CMakeFiles/Quant.dir/all:
 	$(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/depend
 	$(MAKE) -f modules/CMakeFiles/Quant.dir/build.make modules/CMakeFiles/Quant.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dev/openclTest/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dev/openclTest/build/CMakeFiles  2 3
 	@echo "Built target Quant"
 .PHONY : modules/CMakeFiles/Quant.dir/all
 
@@ -119,7 +119,7 @@ all: modules/CMakeFiles/Quant.dir/all
 
 # Build rule for subdir invocation for target.
 modules/CMakeFiles/Quant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/CMakeFiles/Quant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/openclTest/build/CMakeFiles 0
 .PHONY : modules/CMakeFiles/Quant.dir/rule
